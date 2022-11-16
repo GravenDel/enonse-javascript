@@ -1,0 +1,15 @@
+//let non = prompt("Anntre non ou")
+		let non = 'Lafrance movens';
+		non = non.split(' ');
+		
+		let t=non
+		t = t.join(" ");
+		console.log(t);
+
+for (let i = 0; i < non.length; i++) {
+ non[i] = non[i].charAt(0).toUpperCase() + non[i].slice(1);
+}
+
+  non2 = non.join(' ');
+  
+console.log(non2);
