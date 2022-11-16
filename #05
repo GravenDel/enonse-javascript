@@ -1,0 +1,6 @@
+let non = 'Ayibobo Ayiti';
+	non= non.split('')
+	non = non.reverse();
+	non=non.join(" ");
+	non=non.replaceAll(' ','');
+	console.log(non);
