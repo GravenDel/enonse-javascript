@@ -1,0 +1,20 @@
+let ip = "127.0.0.1....";
+        let t =[] ;
+         let sum = 0;
+       
+
+      ip = ip.replaceAll('.','');
+      for(let i of ip){
+      	i = parseFloat(i);
+         t.push(i);
+       }
+
+     
+
+      for (let i = 0; i < t.length; i++) {
+          sum += t[i]*t[0];
+      }
+
+      
+         console.log(`Donk pot ki ouvri a se ${sum}`);
+          
