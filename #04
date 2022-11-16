@@ -1,0 +1,35 @@
+let n=20;
+       let t = [];
+       let tma = [];
+       let tmb = [];
+       let tmab = [];
+       let tnmab = [];
+
+       for(let i = 1; i<=n; i++){
+       	t.push(i);
+
+       }
+       	
+       	for(let i of t){
+       		a = t[1];
+       		b = t[2];
+
+       		if(i%a == 0 && i%b !== 0){
+       			tma.push(i);
+       		}else if(i%a !== 0 && i%b == 0){
+       			tmb.push(i);
+       		}else if(i%a == 0 && i%b == 0){
+       			tmab.push(i);
+       		}else{
+       			tnmab.push(i);
+       		}
+
+       	}
+       	console.log(`a = ${a}`);
+       	console.log(`b = ${b}`);
+       	console.log(`yon inteval 1 jiska ${n}`);
+
+       	console.log(`miltip nonb (a) men ki pa miltip nonb (b): ${tma} \ -->\ total nonb:${tma.length}`);
+       	console.log(`miltip nonb (b) men ki pa miltip nonb (a): ${tmb} \ -->\ total nonb:${tmb.length}`);
+       	console.log(`miltip nonb(a) ak miltip nonb (b): ${tmab} \ -->\ total nonb:${tmab.length}`);
+       	console.log(`ki pa miltip nonb (a) ni nonb (b): ${tnmab} \ -->\ total nonb:${tnmab.length}`);
