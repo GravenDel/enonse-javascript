@@ -1,0 +1,6 @@
+let a='hidden Zoulou1Zozibar32 endpass'
+a=a.split(" ");
+console.log(a);
+
+a=a[a.length-2];
+console.log(a);
