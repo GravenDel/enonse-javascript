@@ -1,0 +1,26 @@
+let chenn = "5 45 123 12";
+		chenn = chenn.split(' ');
+		let t=[];
+		
+		//console.log(chenn);
+
+		for(let i of chenn){
+			let g = 0;
+			if(i.length>1){
+				for(let j of i){
+					g += parseFloat(j)
+				}
+				t.push(g);
+			}else{
+				t.push(parseFloat(i))
+			}
+		}
+
+		//console.log(t)
+       
+       let mul = 1;
+       for(let i = 0; i < t.length; i++){
+       	   mul *= t[i]
+       	  
+       }
+       console.log(mul);
