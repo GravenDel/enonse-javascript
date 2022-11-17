@@ -1,0 +1,4 @@
+let chenn = "Ayibobo ayiti Mwen salye nou";
+		chenn = chenn.replaceAll(' ','');
+
+		console.log(chenn);
