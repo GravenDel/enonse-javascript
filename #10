@@ -1,0 +1,5 @@
+let blast = "web-insecure;34829sjdfnsj32984madsdkj"
+		console.log(`Kle \ *blast*\ la se : ${blast}`);
+		let v = blast.lastIndexOf(';');
+		blast = blast.substring(v+1);
+		console.log(`${blast}`);
