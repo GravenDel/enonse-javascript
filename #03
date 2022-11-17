@@ -1,0 +1,15 @@
+//let non = prompt("Anntre non ou")
+		let non = 'Ayiti se yon BEL PEYI';
+        const t = non.split(' ');
+
+
+		for (let i = 0; i < t.length; i++) {
+		 t[i] = t[i].charAt(0).toUpperCase() + t[i].slice(1).toLowerCase();
+		}
+
+		 let  non2 = t.join(' ');
+
+
+
+		 console.log(t);
+		console.log(non2);
