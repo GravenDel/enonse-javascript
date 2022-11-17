@@ -1,0 +1,4 @@
+let a = prompt("antre yon premye chif");
+    let b = prompt("antre yon dezyem chif");
+     let v = (b/a)/2;
+     console.log(v);
