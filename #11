@@ -1,0 +1,16 @@
+let t = []
+		let n = 20;
+		let minVal;
+		let maxVal;
+		for(let i = 1; i<=n; i++){
+			t.push(i);
+		}
+		console.log(t);
+		for(let i of t){
+			 minVal = Math.min.apply(null, t);
+		}
+		console.log(`pi piti vale a se : ${minVal}`);
+		for(let i of t){
+			 maxVal = Math.max.apply(null, t);
+		}
+		console.log(`pi gran vale a c : ${maxVal}`);
