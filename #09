@@ -1,0 +1,10 @@
+let n = 4;
+		let t = [];
+		for(let i = 1; i <=n; i++){
+			if(i%2 == 0){
+				t.push(i);
+			}
+		}
+		let total = t.length;
+		//console.log(t);
+		console.log(`total nonb ki pe yo nan inteval 1 a ${n} se : ${total} `);
