@@ -1,0 +1,42 @@
+
+    let t=[ 0, 1, 2, 3, 4 ];
+		let premye;
+		let dezyem;
+		let twazyem;
+		let katryem;
+
+
+for(let i in t){
+
+	if(i==0){
+
+		premye=t.reverse();
+	}else if(i==1){
+
+		let v=premye.slice(0,4).reverse();
+		dezyem=v.concat(premye.at(-1));
+	}else if(i==2){
+
+		let j=dezyem.slice(0,3).reverse();
+		twazyem=j.concat(dezyem.slice(3,5));
+
+	}else if(i==3){
+
+		let j=twazyem.slice(0,2).reverse();
+		katryem=j.concat(twazyem.slice(2,5));
+	}
+
+}
+t=t.join(',');
+premye=premye.join(',');
+dezyem=dezyem.join(',');
+twazyem=twazyem.join(',');
+katryem=katryem.join(',');
+
+
+console.log(`${t} --> ${premye}`);
+console.log(`${premye} --> ${dezyem}`);
+console.log(`${dezyem} --> ${twazyem}`);
+console.log(`${twazyem} --> ${katryem}`);
+
+      
