@@ -1,0 +1,9 @@
+let voy = ["a","e","i","o","u","y","A","E","I","O","U","Y"];
+		let chenn = "Lafrance lovens";
+		console.log(chenn)
+		for(let i in chenn){
+			if(voy.includes(chenn[i])){
+				 chenn = chenn.replaceAll(chenn[i-1],"*");
+			}
+		}
+    console.log(chenn);
