@@ -1,0 +1,10 @@
+let a = prompt("antre yon premye chif");
+    let b = prompt("antre yon dezyem chif");
+
+    if(a>b){
+    	console.log(b);
+    }else if(a<b){
+    console.log(a);
+    }else{
+    	console.log(a);
+    }
