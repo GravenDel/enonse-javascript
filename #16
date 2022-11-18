@@ -1,0 +1,15 @@
+let alfa="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		let text=">5K <0Y <3W <6U <3Q";
+		text=text.split(' ');
+		let result=[];
+		//let result;
+		for (let i in text){
+			if(text[0]===">"){
+				result.push(alfa[alfa.indexOf(text[2])+parseInt(text[1])]);
+				//result=alfa[alfa.indexOf(text[2])+parseInt(text[1])];
+			}else{
+				result.push(alfa[alfa.indexOf(text[2])-parseInt(text[1])]);
+				//result=alfa[alfa.indexOf(text[2])-parseInt(text[1])];
+			}
+		}
+		console.log(result.join(''));
